@@ -15,14 +15,13 @@ public class Account {
 		
 	}
 	
-	public Account(long id, String accountName, Double accountBalance,
-			Date lastAccessDate, Date created) {
+	public Account(long id, String accountName, Double accountBalance) {
 		
 		this.id = id;
 		this.accountName = accountName;
 		this.accountBalance = accountBalance;
-		this.lastAccessDate = lastAccessDate;
-		this.created = created;
+		this.lastAccessDate = new Date();
+		this.created = new Date();
 	}
 	// Setter and Getter Methods
 	
